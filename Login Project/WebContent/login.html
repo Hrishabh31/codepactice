@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>Login Form</title>
+<link rel="stylesheet" href="css/style.css">
+<script type="text/javascript" src="validate.js"></script>
+</head>
+<body>
+	<section class="container">
+		<div class="login">
+			<h1>Login to Web App</h1>
+			<form name="form" method="post" action="login.clc">
+				<p>
+					<input type="text" name="uname" value=""
+						placeholder="Username or Email" onblur="return A()"><span style="display: none" id="x">enter name</span>
+				</p>
+				<p>
+					<input type="password" name="pword" value="" placeholder="Password" onblur="return A()"><span style="display: none" id="y">min 5 chars</span>
+				</p>
+				<p class="submit">
+					<input type="submit" name="commit" value="Login" onclick="return A()">
+				</p>
+			</form>
+		</div>
+
+	</section>
+
+</body>
+</html>
